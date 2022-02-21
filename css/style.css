@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/*----------------------Подчеркивание снизу-------------------*/
+
+.underline{
+	font-size: 24px;
+}
+
+.underline::after{
+	content: "";
+	display: block;
+	height: 1px;
+	margin-top: 5px;
+	background: #000;
+	width: 40px;
+}
+
+/*-----------------------------Кнопка-------------------------*/
+
+.div-link{
+	padding: 20px 0 0 5px;
+	margin-bottom: 10px;
+	max-width: 100px;
+	height: 100px;
+}
+
+.link {
+	width: 80px;
+	height: 80px;
+	background: rgb(255, 0, 0);
+	display: inline-block;
+	border-radius: 100%;
+	box-shadow: 0 6px 0 #000;
+	cursor: grab;
+}
+
+.link:hover{
+	background: rgb(223, 3, 3);
+	margin: 2px 0 0 0;
+	box-shadow: 0 4px 0 #000;
+}
+
+.link:active{
+	background: rgb(223, 3, 3);
+	margin: 6px 0 0 0;
+	box-shadow: inset 0 0 7px #000;
+}
+
+.link:visited{
+	background: rgb(255, 0, 0);
+}
+
+
+/*--------------------------/text----------------------------*/
+
+
+.text{
+	background: rgb(12, 182, 154);
+	padding: 10px;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.text p{
+	margin-bottom: 20px;
+	background: rgb(17, 165, 42);
+	padding: 10px;
+}
+
+.text p:first-of-type{
+	color: rgb(212, 16, 16);
+}
+
+.text p:nth-child(5){
+	color: rgb(212, 16, 16);
+}
+
+.text *:last-child{
+	margin-bottom: 0px;
+}
+
+.text p:hover:first-of-type{
+	text-decoration: line-through;
+	background: #000;
+}
+
+.text p:hover:nth-child(2){
+	visibility: hidden;
+}
+
+.text p:active:nth-child(3){
+	opacity: 0.3;
+}
+
+.text p:hover:nth-child(even){
+	text-decoration: underline;
+	color: rgb(55, 15, 92);
+}
+
+.text p:hover:last-of-type{
+	text-decoration: none;
+}
+
+
+/*--------------------------/text-2----------------------------*/
+
+
+.block-2{
+	background: rgb(116, 17, 17);
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.text-2{
+	background: rgb(7, 145, 69);
+	font-size: 26px;
+	padding: 10px;
+}
+
+.text-2 .title{
+	margin-bottom: 10px;
+	font-weight: 900;
+}
+
+.text-2 p{
+	margin-bottom: 20px;
+}
+
+.text-2 p:first-of-type{
+	color: aqua;
+}
+
+.text-2 .ss{
+	margin-bottom: 10px;
+	display: inline-block;	
+	color: rgb(66, 14, 255);
+	text-transform: uppercase;
+}
+
+.text-2 *:last-child{
+	margin-bottom: 0;
+}
+
+
+/*--------------------------/text-3----------------------------*/
+
+
+.text-3{
+	width: 800px;
+	margin: 0 auto;
+}
+
+.text-3 li{
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.text-3 li::before{
+	content: "";
+	background: url('../img/depositphotos.jpg') 0 7.5px / 40px no-repeat;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 0 10px 0 -50px;
+}
+
+.text-3 li:hover::before{
+	background: none;
+}
+
+.text-3 li:not(:nth-child(7)):hover{
+	text-decoration: underline rgb(0, 255, 34);
+}
+
+.text-3 li:first-of-type:hover{
+	background: rgb(236, 103, 103);
+}
+
+.text-3 li:nth-of-type(2):hover{
+	color: rgb(11, 88, 88);
+	
+}
+
+.text-3 li:nth-of-type(3):hover::before{
+	background: url('../img/depositphotos.jpg') 50% 100% / 20px no-repeat;
+}
+
+.text-3 li:nth-of-type(2):hover::before{
+	background: url('../img/depositphotos.jpg') center center / 80px no-repeat;
+}
+
+.text-3 li:nth-of-type(5):hover::before{
+	background: url('../img/Check_mark.svg.png') 0 6px / 40px no-repeat;
+}
+
+.text-3 li:nth-of-type(6):hover{
+	opacity: 0;
+}
+
+.text-3 li:nth-of-type(7):hover{
+	background: url('../img/strip.jpg') center center / cover no-repeat;
+}
+
+.text-3 li:last-of-type:hover{
+	background: #000;
+	color: rgb(132, 0, 255);
+}
+
+.text-3 *:last-child{
+	margin-bottom: 0;
+}
+
+
+/*========================ВТОРАЯ СТРАНИЦА====================*/
+
+
+.design{
+	max-width: 470px;
+	padding: 50px 0 30px 0;
+	font-family: Lato;
+	font-size: 20px;
+	color: #1E212C;
+	line-height: 1.3;
+	margin: 0 auto;
+}
+
+.desing-first-text {
+	font-weight: 700;
+	color: #1E212C;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.desing-second-text {
+	font-weight: 900;
+	font-size: 46px;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+
+.design div:nth-child(1){
+	margin-bottom: 10px;
+}
+
+.design div:nth-child(2){
+	margin-bottom: 40px;
+}
+
+.list-design{
+	margin-bottom: 15px;
+}
+
+.items-design li{
+	margin-bottom: 15px;
+	line-height: 1.6;
+	color: #424551;
+	padding: 0 0 0 40px;
+}
+
+.items-design li:last-child{
+	margin-bottom: 0;
+}
+
+.items-design li::before{
+	content: "";
+	background: url(../img/check.png) center top / 20px no-repeat;
+	width: 20px;
+	min-height: 20px;
+	display: inline-block;
+	margin: 0 20px 0 -40px;
+}
+
+.link-design{
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	width: 161px;
+	height: 44px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 3.1;
+	letter-spacing: 0.5px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+} 
+
+.link-design:focus{
+	outline: 2px solid rgb(231, 75, 2);
+}
+
+.link-design:hover{
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	width: 176px;
+	height: 44px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 3.1;
+	letter-spacing: 0.5px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.link-design:active{
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	width: 178px;
+	height: 44px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 3.1;
+	letter-spacing: 0.5px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
